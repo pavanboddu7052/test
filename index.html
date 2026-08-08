@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="te">
 <head>
- <!-- Open Graph / WhatsApp Preview Meta Tags -->
+<!-- Open Graph / WhatsApp Preview Meta Tags -->
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://github.com/pavanboddu7052/Aditya_Srivalli_Marriage_Invitation/blob/main/aadhar_updated.jpeg?raw=true" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:url" content="https://pavanboddu7052.github.io/Aditya_Srivalli_Marriage_Invitation/" />
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>బొడ్డు వారి వివాహం మరియు రిసెప్షన్ ఆహ్వానం | ADITYA ❤️ SRIVALLI</title>
 <script src="Couplepics/photos.js"></script>
@@ -49,6 +49,8 @@ img{max-width:100%;display:block}
 .avatar-crop{
   width:28px;height:28px;border-radius:50%;overflow:hidden;
   border:1.5px solid var(--gold);background:var(--navy);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
 }
 .avatar-crop:nth-child(2){margin-left:-8px}
 .avatar-crop img{width:100%;height:100%;object-fit:cover;object-position:top}
@@ -167,7 +169,7 @@ img{max-width:100%;display:block}
 /* MAIN PAGE & SECTIONS */
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:13px 40px;display:flex;align-items:center;justify-content:space-between;transition:all .3s}
 nav.scrolled{background:rgba(10,22,40,.95);backdrop-filter:blur(12px);padding:8px 40px;box-shadow:0 2px 18px rgba(0,0,0,.4)}
-.nav-logo{font-family:'Noto Sans Telugu',serif;font-size:.95rem;color:#006400;text-decoration:none}
+.nav-logo{font-family:'Noto Sans Telugu',serif;font-size:.95rem;color:var(--gold);text-decoration:none}
 .nav-links{display:flex;gap:20px;list-style:none}
 .nav-links a{color:var(--gold);text-decoration:none;font-size:.73rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;transition:color .3s}
 .nav-links a:hover{color:#fff}
@@ -201,6 +203,40 @@ nav.scrolled{background:rgba(10,22,40,.95);backdrop-filter:blur(12px);padding:8p
 .h-heart{color:var(--sky);display:inline-block;animation:hb 1.5s ease infinite}
 .hero-pill-wrap{display:flex;flex-direction:column;gap:10px;align-items:center;margin-top:20px}
 .hero-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border-radius:50px;border:1px solid var(--gold);font-family:'Playfair Display',serif;font-size:.88rem;color:var(--gold);opacity:0;animation:hIn .7s ease 1.25s forwards;background:rgba(10,22,40,0.7);box-shadow:0 4px 15px rgba(0,0,0,0.5)}
+
+/* CLEAN SVG-BASED YOUTUBE BUTTON */
+.yt-live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 6px 18px;
+  border-radius: 50px;
+  background: rgba(10, 22, 40, 0.7);
+  border: 1px solid var(--gold);
+  margin-top: 4px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, background 0.3s ease;
+  opacity: 0;
+  animation: hIn .7s ease 1.35s forwards;
+}
+.yt-live-btn:hover {
+  background: rgba(26, 58, 143, 0.85);
+  transform: translateY(-2px);
+}
+.yt-live-btn svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.yt-live-btn span {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 1.5px;
+}
+
 .scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);opacity:0;animation:hIn .6s ease 1.7s forwards,shPulse 2.2s ease-in-out 2.3s infinite;display:flex;flex-direction:column;align-items:center;gap:8px;user-select:none}
 .sh-label{font-size:.68rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);text-shadow:0 2px 8px rgba(0,0,0,0.9)}
 .sh-mouse{width:22px;height:36px;border-radius:12px;border:2px solid var(--gold);position:relative;box-shadow:0 0 14px rgba(212,175,55,.5);background:rgba(10,22,40,0.4)}
@@ -227,7 +263,12 @@ nav.scrolled{background:rgba(10,22,40,.95);backdrop-filter:blur(12px);padding:8p
 .card-head{padding:22px 18px 14px;text-align:center}
 .bride-head{background:linear-gradient(135deg,#1E5631,#2d7050,#0e3320)}
 .groom-head{background:linear-gradient(135deg,var(--royal),#0e2567,var(--mid))}
-.portrait-wrap{width:125px;height:182px;margin:0 auto 12px;border-radius:10px;overflow:hidden;cursor:pointer}
+
+.portrait-wrap{
+  width:125px;height:182px;margin:0 auto 12px;border-radius:10px;
+  overflow:hidden;cursor:pointer;position:relative;
+  background:rgba(255,255,255,0.1);
+}
 .portrait-wrap img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s}
 .portrait-wrap:hover img{transform:scale(1.06)}
 .card-name{font-family:'Cinzel Decorative',serif;font-size:1.1rem;color:#fff;margin-bottom:3px}
@@ -372,16 +413,16 @@ footer{background:var(--navy);color:rgba(255,255,255,.48);text-align:center;padd
 .f-logo{font-family:'Noto Sans Telugu',serif;font-size:1.25rem;color:var(--gold);margin-bottom:5px}
 .f-heart{color:var(--sky);display:inline-block;animation:hb 1.5s ease infinite}
 
-#music-fab{position:fixed;bottom:24px;right:24px;z-index:8999;width:52px;height:52px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--royal),var(--mid));border:2px solid var(--gold);cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.45);transition:transform .2s,box-shadow .3s}
+#music-fab{position:fixed;bottom:24px;right:24px;z-index:8999;width:52px;height:52px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--royal),var(--mid));border:2px solid var(--gold);cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.45);transition:transform .2s,box-shadow .3s,opacity .3s}
 #music-fab:hover{transform:scale(1.1)}
 #music-fab.playing{animation:fabRing 2.4s ease infinite}
 #micon{font-size:1.2rem;line-height:1}
 #mlbl{font-size:.42rem;color:var(--gold);font-family:'Lato',sans-serif;letter-spacing:1px;text-transform:uppercase;margin-top:1px}
 @keyframes fabRing{0%,100%{box-shadow:0 4px 16px rgba(212,175,55,.4),0 0 0 0 rgba(212,175,55,.5)}65%{box-shadow:0 4px 16px rgba(212,175,55,.4),0 0 0 13px rgba(212,175,55,0)}}
 
-/* FIXED SECRET NOTE MODAL STYLING */
+/* SECRET NOTE MODAL STYLING */
 #love-modal{position:fixed;inset:0;z-index:9800;background:rgba(0,0,0,.65);backdrop-filter:blur(7px);display:none;align-items:center;justify-content:center;padding:20px}
-#love-modal.active{display:flex}
+#love-modal.active{display:flex !important}
 .ln-card{background:linear-gradient(160deg,var(--ivory),var(--cream));border:2px solid var(--gold);border-radius:16px;padding:38px 30px;max-width:450px;width:100%;text-align:center;position:relative;box-shadow:0 18px 70px rgba(26,58,143,.3);animation:lnIn .45s cubic-bezier(.2,1.4,.4,1) forwards}
 @keyframes lnIn{from{opacity:0;transform:scale(.84) translateY(18px)}to{opacity:1;transform:none}}
 .ln-close{position:absolute;top:11px;right:14px;font-size:1.3rem;color:var(--royal);cursor:pointer;background:none;border:none}
@@ -463,8 +504,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.48);text-align:center;padd
 <nav id="main-nav">
   <div class="nav-logo-group">
     <a href="#meet-couple" class="couple-avatar-btn" title="Meet Aditya & Srivalli">
-      <div class="avatar-crop"><img src="Groom.png" alt="Aditya"></div>
-      <div class="avatar-crop"><img src="bride.png" alt="Srivalli"></div>
+      <div class="avatar-crop"><img class="js-groom-img" src="Groom.png" alt="Aditya" /></div>
+      <div class="avatar-crop"><img class="js-bride-img" src="bride.png" alt="Srivalli" /></div>
       <span class="avatar-label">A ♥ S</span>
     </a>
     <a href="#hero" class="nav-logo">శ్రీ రస్తు శుభమస్తు అవిఘ్నమస్తు</a>
@@ -492,6 +533,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.48);text-align:center;padd
     <div class="hero-pill-wrap">
       <div class="hero-pill"><span>💑</span><span>Marriage: Thursday, 27 August 2026 &nbsp;·&nbsp; 11:39 PM</span></div>
       <div class="hero-pill"><span>💐</span><span>Reception: Friday, 28 August 2026 &nbsp;·&nbsp; 06:30 PM</span></div>
+
+      <!-- INLINE SVG YOUTUBE LIVE BUTTON (NO MISSING youtube.jpg ISSUE) -->
+      <a href="https://www.youtube.com/watch?v=FbXOsVByKmk&list=RDFbXOsVByKmk&start_radio=1" target="_blank" rel="noopener noreferrer" class="yt-live-btn">
+        <svg viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <span>WATCH LIVE</span>
+      </a>
     </div>
   </div>
   <div class="scroll-hint"><span class="sh-label">Scroll</span><div class="sh-mouse"><span class="sh-wheel"></span></div></div>
@@ -505,10 +552,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.48);text-align:center;padd
     <div class="gold-line"></div>
   </div>
   <div class="couple-wrap">
-    <!-- Groom Card with unique ID -->
+    <!-- Groom Card -->
     <div class="char-card reveal-l">
       <div class="card-head groom-head">
-        <div class="portrait-wrap" id="groom-port"><img src="Groom.png" alt="Aditya"></div>
+        <div class="portrait-wrap" id="groom-port">
+          <img class="js-groom-img" src="Groom.png" alt="Aditya" />
+        </div>
         <div class="card-name">Aditya</div>
         <div class="card-role">The Groom · వరుడు</div>
       </div>
@@ -520,10 +569,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.48);text-align:center;padd
         </ul>
       </div>
     </div>
-    <!-- Bride Card with unique ID -->
+    <!-- Bride Card -->
     <div class="char-card reveal-r">
       <div class="card-head bride-head">
-        <div class="portrait-wrap" id="bride-port"><img src="bride.png" alt="Srivalli"></div>
+        <div class="portrait-wrap" id="bride-port">
+          <img class="js-bride-img" src="bride.png" alt="Srivalli" />
+        </div>
         <div class="card-name">Srivalli</div>
         <div class="card-role">The Bride · వధువు</div>
       </div>
@@ -536,8 +587,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.48);text-align:center;padd
       </div>
     </div>
   </div>
-  <!-- Clickable Secret Note trigger -->
-   <p class="love-hint reveal" id="love-trigger" style="transition-delay:.4s">🕉️ &nbsp; A secret note is hidden here — tap to discover &nbsp; 🕉️</p>
+  <p class="love-hint reveal" id="love-trigger" style="transition-delay:.4s">🕉️ &nbsp; A secret note is hidden here — tap to discover &nbsp; 🕉️</p>
 </section>
 
 <!-- DATE REVEAL -->
@@ -762,10 +812,9 @@ footer{background:var(--navy);color:rgba(255,255,255,.48);text-align:center;padd
       </div>
     </div>
   </div>
-    <div class="btn-group reveal" style="transition-delay:.2s">
-      <a class="btn btn-pri" href="https://maps.app.goo.gl/jq5gWhsUFbQXZk1u6" target="_blank" rel="noopener">📍 Get Directions to Krishna Nilayam (Groom Residence)</a>
+  <div class="btn-group reveal" style="transition-delay:.2s; margin-top:20px;">
+    <a class="btn btn-pri" href="https://maps.app.goo.gl/jq5gWhsUFbQXZk1u6" target="_blank" rel="noopener">📍 Get Directions to Krishna Nilayam (Groom Residence)</a>
     <a class="btn btn-pri" href="https://maps.app.goo.gl/7bPp9ii86fikUg7R9" target="_blank" rel="noopener">📍 Get Directions to Star Hotel (A Stay for Bride guests)</a>
-    </div>
   </div>
 </section>
 
@@ -841,19 +890,86 @@ footer{background:var(--navy);color:rgba(255,255,255,.48);text-align:center;padd
 <script>
 (function(){
 'use strict';
-function $(id){return document.getElementById(id)}
+function $(id){
+  if(typeof id !== 'string') return null;
+  return document.getElementById(id.trim());
+}
 function qq(s,c){return[...(c||document).querySelectorAll(s)]}
 
-// Fallback music path so it plays even if photos.js config is missing
-const PHOTOS = (window.WEDDING_CONFIG && window.WEDDING_CONFIG.photos) || (window.RECEPTION_CONFIG && window.RECEPTION_CONFIG.photos) || [];
-const MUSIC = (window.WEDDING_CONFIG && window.WEDDING_CONFIG.musicFile) || (window.RECEPTION_CONFIG && window.RECEPTION_CONFIG.musicFile) || "Wedding.mp3";
+const PHOTOS = (window.WEDDING_CONFIG && window.WEDDING_CONFIG.photos) || 
+               (window.Marriage_CONFIG && window.Marriage_CONFIG.photos) || 
+               (window.RECEPTION_CONFIG && window.RECEPTION_CONFIG.photos) || [];
 
-// TARGET DATES (Months are 0-indexed: 7 = August)
-const WED_DATE = new Date(2026, 7, 27, 23, 39, 0); // Aug 27, 2026, 11:39 PM
-const REC_DATE = new Date(2026, 7, 28, 18, 30, 0); // Aug 28, 2026, 06:30 PM
+// MULTI-PATH AUDIO RESOLVER (Fixes 404 audio errors on GitHub Pages)
+const MUSIC_PATHS = [
+  (window.WEDDING_CONFIG && window.WEDDING_CONFIG.musicFile),
+  (window.Marriage_CONFIG && window.Marriage_CONFIG.musicFile),
+  (window.RECEPTION_CONFIG && window.RECEPTION_CONFIG.musicFile),
+  "Wedding.mp3",
+  "Couplepics/Wedding.mp3",
+  "Couplepics/music.mp3"
+].filter(Boolean);
+
+let currentAudioIndex = 0;
+const WED_DATE = new Date(2026, 7, 27, 23, 39, 0);
+const REC_DATE = new Date(2026, 7, 28, 18, 30, 0);
 
 let cdInt = null;
-let musicOn = false, musicStarted = false;
+let musicOn = false, musicStarted = false, manuallyPaused = false;
+
+/* ── IMAGE FALLBACK (fixes broken photo icons at top-left nav avatars
+   and in the Meet-the-Couple portraits when a filename's case/extension
+   doesn't match what's actually hosted on GitHub Pages, which is
+   case-sensitive unlike most local dev setups) ── */
+const GROOM_CANDIDATES = ['Groom.png','groom.png','Groom.jpg','groom.jpg','Groom.jpeg','groom.jpeg'];
+const BRIDE_CANDIDATES = ['bride.png','Bride.png','bride.jpg','Bride.jpg','bride.jpeg','Bride.jpeg'];
+
+function wireImageFallback(img, candidates, initial){
+  let idx = candidates.indexOf(img.getAttribute('src'));
+  if(idx < 0) idx = 0;
+  img.addEventListener('error', function(){
+    idx++;
+    if(idx < candidates.length){
+      img.src = candidates[idx];
+    } else {
+      // every candidate failed — swap in a clean monogram instead of
+      // leaving the browser's broken-image icon showing
+      const holder = img.closest('.avatar-crop') || img.closest('.portrait-wrap');
+      if(holder){
+        holder.innerHTML =
+          '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;'+
+          'background:var(--royal);color:var(--gold);font-family:\'Cinzel Decorative\',serif;font-size:1.05em;">'+
+          initial + '</div>';
+      }
+    }
+  });
+}
+function initCoupleImages(){
+  qq('.js-groom-img').forEach(img => wireImageFallback(img, GROOM_CANDIDATES, 'A'));
+  qq('.js-bride-img').forEach(img => wireImageFallback(img, BRIDE_CANDIDATES, 'S'));
+}
+
+/* ── AUDIO FALLBACK (fixes the music never recovering from a 404
+   because the error handler used to be attached too late, and fixes
+   music restarting on every tap even after the user paused it) ── */
+function initAudioFallback(){
+  const audio = $('bg-audio');
+  if(!audio) return;
+  audio.addEventListener('error', function(){
+    if(currentAudioIndex < MUSIC_PATHS.length - 1){
+      currentAudioIndex++;
+      audio.src = MUSIC_PATHS[currentAudioIndex];
+      if(musicOn) audio.play().catch(()=>{});
+    } else {
+      // every known path failed — stop trying and reflect it in the UI
+      musicOn = false;
+      musicStarted = true; // don't keep retrying on every tap
+      updateMusicUI();
+      const fab = $('music-fab');
+      if(fab) fab.style.opacity = '0.45';
+    }
+  });
+}
 
 /* ── stars ── */
 function initStars(id,n){
@@ -925,14 +1041,13 @@ function showScroll(){
   }
   wrap.addEventListener('touchstart',e=>onStart(e.touches[0].clientY),{passive:true});
   wrap.addEventListener('touchmove', e=>onMove(e.touches[0].clientY),{passive:true});
-  wrap.addEventListener('touchend',   onEnd,{passive:true});
+  wrap.addEventListener('touchend',  onEnd,{passive:true});
   wrap.addEventListener('mousedown', e=>onStart(e.clientY));
   document.addEventListener('mousemove',e=>{if(drag)onMove(e.clientY)});
   document.addEventListener('mouseup', ()=>{if(drag)onEnd()});
   wrap.addEventListener('dblclick',complete);
 }
 window.enterMain=function(){
-  // Force audio to start/continue when user clicks 'Enter the Celebration'
   forceStartAudio();
   const ss=$('scroll-screen');ss.classList.add('out');
   setTimeout(()=>{ss.style.display='none';revealMain()},1050);
@@ -946,7 +1061,6 @@ function revealMain(){
   initScrollReveal();
   initDiyaReveal();
   initGalleryBook();
-  initCalBtn();
   initLoveNote();
   initMusic();
   startCountdown();
@@ -1153,63 +1267,59 @@ function initFireworks(){
   window.addEventListener('resize',resize);
 }
 
-/* ── calendar ICS ── */
-function initCalBtn(){
-  const btn = $('cal-btn');
-  if(!btn) return;
-  btn.addEventListener('click',()=>{
-    const ics=['BEGIN:VCALENDAR','VERSION:2.0','BEGIN:VEVENT','SUMMARY:Aditya & Srivalli Marriage & Reception','DTSTART:20260827T233900','DTEND:20260828T230000','LOCATION:Palakollu & Mogalthur\\, Andhra Pradesh','DESCRIPTION:Marriage & Reception of Aditya & Srivalli','END:VEVENT','END:VCALENDAR'].join('\r\n');
-    const a=document.createElement('a');
-    a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));
-    a.download='Aditya-Srivalli-Wedding.ics';a.click();URL.revokeObjectURL(a.href);
-  });
-}
-
-/* ── FIXED SECRET NOTE MODAL ── */
+/* ── SECRET NOTE MODAL HANDLER ── */
 function initLoveNote(){
   const modal = $('love-modal');
   if(!modal) return;
 
-  function open(){
+  function openModal(e){
+    if(e) {
+      e.stopPropagation();
+      e.preventDefault();
+    }
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
-  function close(){
+
+  function closeModal(e){
+    if(e) {
+      e.stopPropagation();
+      e.preventDefault();
+    }
     modal.classList.remove('active');
     document.body.style.overflow = '';
   }
 
-  // Bind trigger buttons securely
   const triggers = [$('love-trigger'), $('groom-port'), $('bride-port')];
   triggers.forEach(el => {
     if(el) {
-      el.addEventListener('click', open);
-      el.addEventListener('touchend', function(e) {
-        e.preventDefault();
-        open();
-      }, {passive: false});
+      el.addEventListener('click', openModal);
+      el.addEventListener('touchend', openModal, {passive: false});
     }
   });
 
   const closeBtn = $('ln-close');
-  if(closeBtn) closeBtn.addEventListener('click', close);
+  if(closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+    closeBtn.addEventListener('touchend', closeModal, {passive: false});
+  }
   
   modal.addEventListener('click', function(e){
-    if(e.target === modal) close();
+    if(e.target === modal) closeModal(e);
   });
   
   document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape' && modal.classList.contains('active')) close();
+    if(e.key === 'Escape' && modal.classList.contains('active')) closeModal();
   });
 }
 
-/* ── FIXED MUSIC FAB & AUDIO ── */
+/* ── ROBUST MUSIC CONTROLLER WITH FALLBACK ── */
 function forceStartAudio() {
   const audio = $('bg-audio');
   if (!audio) return;
 
   if (!audio.src || audio.src === "" || audio.src.endsWith("/")) {
-    audio.src = MUSIC;
+    audio.src = MUSIC_PATHS[currentAudioIndex];
   }
   audio.volume = 0.42;
 
@@ -1220,7 +1330,7 @@ function forceStartAudio() {
       musicOn = true;
       updateMusicUI();
     }).catch(err => {
-      console.log("Autoplay blocked or interrupted:", err);
+      console.log("Audio play deferred or blocked:", err);
     });
   }
 }
@@ -1241,10 +1351,12 @@ function initMusic(){
 
   function toggle(){
     if (!musicOn) {
+      manuallyPaused = false;
       forceStartAudio();
     } else {
       audio.pause();
       musicOn = false;
+      manuallyPaused = true;
       updateMusicUI();
     }
   }
@@ -1258,12 +1370,17 @@ function initMusic(){
   });
 }
 
-// Global user gesture listeners so touch, tap, drag, or click anywhere ensures music stays on
+// Global user gesture listeners — only attempt the very first autoplay
+// kick (browsers require a gesture); once the user explicitly pauses,
+// stop overriding that choice on every subsequent tap.
 ['click', 'touchstart', 'touchmove', 'pointerdown', 'mousedown'].forEach(eventType => {
   document.addEventListener(eventType, () => {
-    if (!musicOn) forceStartAudio();
+    if (!musicStarted && !manuallyPaused) forceStartAudio();
   }, { passive: true });
 });
+
+initCoupleImages();
+initAudioFallback();
 
 window.addEventListener('DOMContentLoaded', () => {
   showDoors();
