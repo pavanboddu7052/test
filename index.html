@@ -265,7 +265,9 @@ nav.scrolled{background:rgba(10,22,40,.95);backdrop-filter:blur(12px);padding:8p
 .groom-head{background:linear-gradient(135deg,var(--royal),#0e2567,var(--mid))}
 
 .portrait-wrap{
-  width:190px;height:270px;margin:0 auto 14px;border-radius:14px;
+  width:clamp(120px, 42vw, 190px);
+  aspect-ratio: 19 / 27;
+  margin:0 auto 14px;border-radius:14px;
   overflow:hidden;cursor:pointer;position:relative;
   background:rgba(255,255,255,0.1);
   box-shadow:0 8px 22px rgba(0,0,0,.22);
