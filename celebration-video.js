@@ -54,9 +54,6 @@
         // Try multiple video paths
         const videoPaths = [
             'Couplepics/celebration.mp4',
-            'celebration.mp4',
-            'Couplepics/video.mp4',
-            'video.mp4'
         ];
 
         // First try to load a default video
