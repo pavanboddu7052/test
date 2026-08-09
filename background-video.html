@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Background video — demo for pavanboddu7052/test</title>
+  <style>
+    /* Full-viewport background video */
+    #bg-video {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* cover the viewport, preserving aspect ratio */
+      z-index: -1;       /* behind page content */
+      pointer-events: none; /* allow clicks through the video */
+      filter: brightness(0.6); /* dim a little so content is readable */
+    }
+
+    /* Content above the video */
+    .page-content {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Optional: hide video on small screens to save bandwidth / avoid autoplay issues */
+    @media (max-width: 640px) {
+      #bg-video { display: none; }
+      body { background: url('assets/images/bg-poster.svg') center/cover no-repeat; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background video: muted + autoplay + loop + playsinline (for iOS) -->
+  <video id="bg-video" autoplay muted loop playsinline poster="assets/images/bg-poster.svg">
+    <!-- Add your video files at assets/videos/bg.webm and assets/videos/bg.mp4 -->
+    <source src="assets/videos/bg.webm" type="video/webm">
+    <source src="assets/videos/bg.mp4" type="video/mp4">
+    <!-- Fallback text -->
+    Your browser does not support the video tag.
+  </video>
+
+  <main class="page-content">
+    <div>
+      <h1>Background video demo</h1>
+      <p>Place your video files at <code>assets/videos/bg.webm</code> and <code>assets/videos/bg.mp4</code>. If you want, I can add them for you — upload the files or tell me the URLs.</p>
+    </div>
+  </main>
+
+  <script>
+    // Try to play; if autoplay is blocked, wait for a user gesture
+    const bg = document.getElementById('bg-video');
+    function tryPlay() {
+      if (!bg) return;
+      const playPromise = bg.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          document.addEventListener('click', () => bg.play(), { once: true });
+        });
+      }
+    }
+    tryPlay();
+  </script>
+</body>
+</html>
