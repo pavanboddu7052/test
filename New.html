@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>కల్యాణ పత్రిక - Wedding Invitation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mandali&family=Tiro+Telugu&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #2b0408;
+            font-family: 'Tiro Telugu', 'Mandali', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fffdf5;
+            max-width: 650px;
+            width: 100%;
+            border: 12px solid #b38728;
+            border-image: linear-[#b38728], #fbf5b7, #aa771c;
+            border-radius: 16px;
+            padding: 35px 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            text-align: center;
+            position: relative;
+            color: #4a0e17;
+        }
+
+        .inner-border {
+            border: 2px dashed #b38728;
+            padding: 25px 15px;
+            border-radius: 8px;
+        }
+
+        .header-symbol {
+            font-size: 32px;
+            color: #b38728;
+            margin-bottom: 5px;
+        }
+
+        .sloka {
+            font-size: 16px;
+            font-weight: bold;
+            color: #7a121d;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .title {
+            font-size: 28px;
+            color: #900c1e;
+            border-bottom: 2px solid #b38728;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .names-container {
+            margin: 25px 0;
+        }
+
+        .groom-name, .bride-name {
+            font-size: 30px;
+            color: #800000;
+            font-weight: bold;
+        }
+
+        .parent-info {
+            font-size: 15px;
+            color: #555;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .weds {
+            font-size: 22px;
+            color: #b38728;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .event-details {
+            background-color: #fff9e6;
+            border: 1px solid #e6c667;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: left;
+        }
+
+        .detail-item {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .detail-item strong {
+            color: #800000;
+        }
+
+        .venue {
+            font-size: 18px;
+            color: #4a0e17;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 16px;
+            color: #7a121d;
+            font-weight: bold;
+        }
+
+        .rsvp {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        @media (max-width: 480px) {
+            .card { padding: 20px 10px; }
+            .title { font-size: 22px; }
+            .groom-name, .bride-name { font-size: 24px; }
+            .detail-item { font-size: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="inner-border">
+        <div class="header-symbol">卐  ॥ శ్రీ రస్తు ॥  卐</div>
+        <div class="sloka">
+            వక్రతుండ మహాకాయ సూర్యకోటి సమప్రభ ।<br>
+            నిర్విఘ్నం కురు మే దేవ సర్వకార్యేషు సర్వదా ॥
+        </div>
+
+        <div class="title">వివాహ ఆహ్వాన పత్రిక</div>
+
+        <p style="font-size: 16px; margin-bottom: 20px;">
+            శ్రీమతే రామానుజాయ నమః / స్వస్తిశ్రీ శోభనకృత్ నామ సంవత్సరం
+        </p>
+
+        <div class="names-container">
+            <!-- Groom Details -->
+            <div class="groom-name">చి. [వరుడి పేరు]</div>
+            <div class="parent-info">
+                (శ్రీమతి [తల్లి పేరు] & శ్రీ [తండ్రి పేరు] గారి కుమారుడు)
+            </div>
+
+            <div class="weds">సంయుక్త</div>
+
+            <!-- Bride Details -->
+            <div class="bride-name">చి.ల.సౌ. [వధువు పేరు]</div>
+            <div class="parent-info">
+                (శ్రీమతి [తల్లి పేరు] & శ్రీ [తండ్రి పేరు] గారి కుమార్తె)
+            </div>
+        </div>
+
+        <p style="font-size: 16px; margin: 15px 0; color: #333;">
+            మా గృహలక్ష్మి వివాహ మహోత్సవమునకు తమరి సకుటుంబ పరివార సమేతంగా విచ్చేసి నూతన దంపతులను ఆశీర్వదించవలసిందిగా మనవి.
+        </p>
+
+        <!-- Wedding Timings & Details -->
+        <div class="event-details">
+            <div class="detail-item">
+                <strong>ముహూర్తం:</strong> [తేదీ, ఉదా: గురువారం, 15 నవంబర్ 2026] ఉదయం [09:15] గంటలకు ([నక్షత్రం] నక్షత్ర యుక్త [లగ్నం] లగ్నమందు).
+            </div>
+            <div class="detail-item">
+                <strong>స్థలం:</strong> [కల్యాణ మండపం పేరు], [వీధి / ఏరియా పేరు], [పట్టణం / నగరం].
+            </div>
+            <div class="detail-item">
+                <strong>విందు (Lunch/Dinner):</strong> ముహూర్తానంతరం శుభ విందు ఏర్పాటు చేయబడినది.
+            </div>
+        </div>
+
+        <div class="footer">
+            ఆహ్వానించువారు:<br>
+            [కుటుంబం / ఆహ్వానికుల పేర్లు]
+        </div>
+
+        <div class="rsvp">
+            సంప్రదించాల్సిన సంఖ్య: +91 98765 43210
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
